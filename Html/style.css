@@ -1,0 +1,17 @@
+.a{
+
+    color: red;
+    text-align: center;
+    background-color: yellow;
+    font-family: sans-serif;
+    font-size: 40px;
+    border-bottom: 2px solid black;
+    border-radius: 80px;
+    padding: 10px;
+    text-shadow: 2px 2px 8px black;
+ }
+
+ #box{
+
+    color: blue;
+ }
