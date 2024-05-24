@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .container{
+
+            height: 100vh;
+            border: 2px solid black;
+            display: flex;
+        }
+
+        .box{
+
+            width: 200px;
+            border: 2px solid black;
+        }
+
+        .a1{
+
+            width: 20%;
+            background-color: green;
+        }
+
+        .a2{
+
+            width: 60%;
+            background-color: yellow;
+        }
+
+        .a3{
+            width: 20%;
+            background-color: blue;
+        }
+
+        #inner-box-1{
+
+            height: 20%;
+            background-color: red;
+        }
+
+        #inner-box-2{
+
+            height: 80%;
+            background-color: brown;
+            display: flex;
+            flex-wrap: wrap;
+         
+        }
+
+        .item{
+
+            height: 40%;
+            width: 25%;
+            background-color: white;
+            border: 2px solid black;
+        }
+
+        .inner-a3{
+
+            height: 30%;
+            background-color: yellow;
+            border-radius: 200px;
+        }
+
+        .inner-a4{
+
+            height: 70%;
+            background-color: orangered;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+       <div class="box a1"></div>
+       <div class="box a2">
+        <div class="inner-box2" id="inner-box-1"></div>
+        <div class="inner-box2" id="inner-box-2">
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+        </div>
+       </div>
+       <div class="box a3" id="box3">
+          <div class="inner-a3"></div>
+          <div class="inner-a4"></div>
+       </div>
+    </div>
+</body>
+</html>
