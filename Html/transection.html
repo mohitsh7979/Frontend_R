@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+      }
+
+      .container {
+        height: 400px;
+        width: 400px;
+        background-color: black;
+        /* transition-property: background-color,height,width,border-radius;
+            transition-duration: 2s; */
+        transition: all 1s;
+        margin: 5px;
+        border-radius: 20px;
+
+        /* border-radius: 200px 0px 0px 0px; */
+      }
+
+      .container1 {
+        /* transform: skewX(-60deg); */
+        /* transform: skewY(60deg) */
+        animation-name: cont;
+        animation-duration: 1s;
+        animation-timing-function: linear;
+        animation-iteration-count: infinite;
+      }
+
+      @keyframes cont {
+        from {
+          transform: rotate(0deg);
+        }
+
+        to {
+          transform: rotate(360deg);
+        }
+      }
+
+      .container2 {
+        animation-name: cont1;
+        animation-duration: 1s;
+        animation-timing-function: linear;
+        animation-iteration-count: infinite;
+      }
+
+      @keyframes cont1 {
+        from {
+          transform: rotate(0deg);
+        }
+
+        to {
+          transform: rotate(-360deg);
+        }
+      }
+
+      .container:hover {
+        /* background-color: red; */
+        /* height: 700px;
+            width: 700px;
+            border-radius: 200px; */
+        /* background: url('car.jpg');
+            background-size: cover; */
+        /* transform: rotate(-180deg); */
+        /* transform: scale(0.5); */
+        /* transform: skewX(-60deg); */
+        /* transform: skewY(-60deg) */
+        /* transform: translateX(-500px); */
+        /* transform: translateY(800px); */
+      }
+
+      /* .container2{
+
+            transform: skewY(-60deg)
+
+        } */
+    </style>
+  </head>
+  <body>
+    <div class="container1 container" style="background-color: red;"></div>
+    <div class="container container2"></div>
+    <div class="container1 container" style="background-color: red"></div>
+    <div class="container container2"></div>
+  </body>
+</html>

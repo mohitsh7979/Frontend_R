@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+
+            height: 400px;
+            width: 400px;
+            border: 2px solid black;
+            overflow: hidden;
+            transition: all 1.5s;
+            position: relative;
+          
+        }
+
+        .content{
+
+            height: 300px;
+            position: absolute;
+            top: 380px;
+            transition: all 1.5s;
+            padding: 10px;
+        }
+
+        img{
+       
+            height: 100%;
+            width: 100%;
+            transition: all 0.8s;
+
+        }
+
+        .container:hover .content{
+
+            transform: translateY(-150px);
+        }
+
+        .container:hover img{
+
+            transform: scale(1.2);
+        }
+
+        .overlay{
+
+            background-color: rgba(19, 53, 123, 0.4);
+            height: 400px;
+            width: 400px;
+            position: absolute;
+            top: 0px;
+            display: none;
+        }
+
+        .container:hover .overlay{
+
+            display: block;
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <img src="https://images.unsplash.com/photo-1715760253574-f7d4545afd04?q=80&w=1981&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+        <div class="overlay"></div>
+        <div class="content">
+            <h1>New York City</h1>
+            <a href="">View all price</a>
+        </div>
+    </div>
+    
+</body>
+</html>
