@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Instagram</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: sans-serif;
+      }
+      .container {
+        display: grid;
+        grid-template-columns: 1fr 5fr;
+        min-height: 100vh;
+      }
+
+      .left {
+        border-right: 1px solid black;
+        padding: 15px;
+      }
+
+      .right {
+        /* border: 2px solid black; */
+      }
+
+      .logo img {
+        width: 200px;
+      }
+
+      .menu ul li {
+        list-style: none;
+        margin: 40px 10px;
+      }
+
+      .others {
+        margin-top: 8rem;
+      }
+
+      .others ul li {
+        list-style: none;
+        margin: 30px 10px;
+      }
+
+      .menu ul li span {
+        margin: 0px 5px;
+      }
+
+      .pro {
+        height: 20px;
+        width: 20px;
+        /* border: 2px solid black; */
+        display: inline-block;
+        border-radius: 20px;
+        position: relative;
+        top: 0.1rem;
+      }
+
+      .profile {
+        height: 200px;
+        /* border: 2px solid black; */
+        width: 80%;
+        margin: auto;
+      }
+
+      .upper {
+        height: 200px;
+        display: grid;
+        grid-template-columns: 2fr 4fr;
+      }
+
+      .upper-left {
+      
+        height: 200px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .upper-right {
+        height: 200px;
+        padding: 30px 0px;
+
+      }
+
+      .upper-username{
+
+      }
+
+      .upper-left img {
+        width: 172px;
+        height: 168px;
+        border-radius: 80px;
+      }
+
+      .upper-username span,button{
+
+        margin: 0px 4px;
+      }
+
+      .upper-username button{
+
+        padding: 8px 20px;
+        border: none;
+        border-radius: 8px;
+      }
+
+      .name{
+
+        font-family: sans-serif;
+        font-size: 18px;
+      }
+
+      .follower{
+
+        display: flex;
+        width: 50%;
+        justify-content: space-between;
+      }
+
+      .follower p{
+
+    
+
+        margin: 20px 0px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="left">
+        <div class="logo">
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/Instagram_logo.svg/2560px-Instagram_logo.svg.png"
+            alt=""
+          />
+        </div>
+        <div class="menu">
+          <ul>
+            <li>
+              <span><i class="fa-solid fa-house"></i></span>
+              <span>Home</span>
+            </li>
+            <li>
+              <span><i class="fa-solid fa-magnifying-glass"></i></span>
+              <span>Search</span>
+            </li>
+            <li>
+              <span><i class="fa-solid fa-compass"></i></span>
+              <span>Explore</span>
+            </li>
+            <li>
+              <span><i class="fa-solid fa-play"></i></span>
+              <span>Reels</span>
+            </li>
+            <li>
+              <span><i class="fa-solid fa-message"></i></span>
+              <span>Message</span>
+            </li>
+            <li>
+              <span><i class="fa-regular fa-heart"></i></span>
+              <span>Notification</span>
+            </li>
+            <li>
+              <span><i class="fa-solid fa-plus"></i></span>
+              <span>Create</span>
+            </li>
+            <li>
+              <span class="pro"></span>
+              <span>Profile</span>
+            </li>
+          </ul>
+        </div>
+        <div class="others">
+          <ul>
+            <li>Threads</li>
+            <li>More</li>
+          </ul>
+        </div>
+      </div>
+      <div class="right">
+        <div class="profile">
+          <div class="upper">
+            <div class="upper-left">
+              <img src="car.jpg" alt="" />
+            </div>
+            <div class="upper-right">
+                <div class="upper-username">
+                   <span class="name">arohi_garg_201</span>
+                   <button>Edit Profile</button>
+                   <button>View Archive</button>
+                   <span><i class="fa-solid fa-gear"></i></span>
+                </div> 
+                <div class="follower">
+                    <p>16 Posts</p>
+                    <p>201 followers</p>
+                    <p>212 following</p>
+                </div>           
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

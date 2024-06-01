@@ -7,3 +7,6 @@ flex-box (justify-content,align-item,flex-direction,flex-wrap)
 overflow 
 z-index
 animation,transection,transform
+media query 
+sizeing(rem,em,vh,vw,%,px)
+grid 
