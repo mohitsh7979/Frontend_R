@@ -1,4 +1,4 @@
-a = "mohit sharma"
+// a = "mohit sharma"
 // console.log(a)
 // console.log(typeof a)
 // console.log(a[0])
@@ -15,4 +15,7 @@ a = "mohit sharma"
 //     console.log(i)
 // }
 
-console.log(a.uppercase())
+// console.log(a.uppercase())
+
+
+
